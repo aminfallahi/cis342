@@ -42,7 +42,7 @@ Shell programming
 
 Redirection/Piping
 ---
-
+- Basics
 	- demo: `echo 'hello Alice' > somefile`
 			`ls -l > somefile`
 			`echo 'hello Alice' >> somefile`
