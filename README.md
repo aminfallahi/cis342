@@ -33,10 +33,10 @@ Shell programming
     - exercise: 
         1. `touch file111; rm file111; echo $?` what is the output? 
         2. what do you need to do to make `echo $?` print out 1
-        3. 
+        3. can you use "if" to decide based on the exit value of a command?
     - homework:
         1. `mkdir fff; echo $?; mkdir fff; echo $?;` why is output different?
-        2. can exit code have any other value that 0 and 1? write a program to gets 3 integers and prints the sum of them. If the number of arguments provided are not valid (<>3) the program should exit with code 2.
+        2. can exit code have any other value that 0 and 1? read the man page for "exit". write a program that gets 3 integers and prints the sum of them. If the number of arguments provided are not valid (<>3) the program should exit with code 2.
         3. we want to use the rm command but we don't want to get errors. Write a script to get a file name as a parameter and removes it. If the file does not exist, it should not give an error.
 - Commenting
 
