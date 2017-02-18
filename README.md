@@ -55,15 +55,40 @@ Redirection/Piping
 		1. read the man page for 'head' and 'tail' commands. write a bash script to get name of a file and writes the 3 first and 3 last lines of the file to another file named 'output'.
 		2. read the man page for 'wc' command. write a bash script to get name of a file and removes it if it contains less that 3 words.
 		3. using 'ls' and 'wc' commands, write a single command to print out the number of files in the current directory.
+		4. use head and tail to print out lines number 25 to 30 of a long file.
 			
 
 Grep & Find
 ---
-
-
+- Grep
+	- demo: `grep hello hello.c`
+			`cat hello.c | grep hello`
+	- exercise:
+		1. use head and tail to find patterns just in parts of files.
+		2. see what -i parameter does when used with grep
+		3. test "^hello" reqular expression on a sample text file.
 Process Management
 ---
 
-- ps
+- ps and kill
+	- demo: `ps aux`
+			`kill -15 1234`
+			`kill -l`
+	- exercise:
+		1. use grep to find all the processes running as root
+		2. open firefox web browser and find its pid
+		3. terminate firefox using the kill command. Suppose firefox is crashed and you can't close it using graphical interface. What you need to do to close it?
 - top
+	- demo: `top`
+	- exercise:
+		1. open firefox and use top interactive commands to close it
+		2. open firefox again. open some websites and tabs and see how they affect the values in top command.
 - Background processes
+	- demo: `vim &`
+			`jobs`
+			`fg`
+	- exercise:
+		1. run "top". now use ctrl+c to terminate it. run in another time and this time use ctrl+z. what is the difference?
+		2. run top in the background. also run vim in the background. try switching between them in one terminal.
+		3. copy a big file that takes a long time in the background and observe when it finishes with top.
+			
