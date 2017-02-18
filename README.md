@@ -14,10 +14,11 @@ Shell programming
 ---
 
 - Basics: #! , if , variables , let
-	- demo: `#!/bin/bash echo 'hello world';`
-			`#!/bin/bash a=1; b=2; a=$a+$b; echo $a;`
-			`#!/bin/bash a=2; b=2; let a=$a+$b; echo $a;`
-			`if [ $a -gt $b ]; then echo 'a is greater than b'; fi`
+	- demo:
+		1. `#!/bin/bash echo 'hello world';`
+		2. `#!/bin/bash a=1; b=2; a=$a+$b; echo $a;`
+		3. `#!/bin/bash a=2; b=2; let a=$a+$b; echo $a;`
+		4. `if [ $a -gt $b ]; then echo 'a is greater than b'; fi`
 	- exercise:
 		1. write a script to initialize variables a and b and then swap the values of them
 		2. write a script to initialize a and b with some constant value. Then creates a file with the name of the value of the greater variable. For example if a equals 3 and b equals 4, it should create a file named 4.
@@ -43,10 +44,11 @@ Shell programming
 Redirection/Piping
 ---
 - Basics
-	- demo: `echo 'hello Alice' > somefile`
-			`ls -l > somefile`
-			`echo 'hello Alice' >> somefile`
-			`ls /etc | more`
+	- demo:
+		1. `echo 'hello Alice' > somefile`
+		2. `ls -l > somefile`
+		3. `echo 'hello Alice' >> somefile`
+		4. `ls /etc | more`
 	- exercise:
 		1. what happens if you try removing a non existing file and write the output to a file? run `rm nonexistingfile > output`. is the error printed out on the screen? is it written in the file? or both?
 		2. can you pipe and redirect more that one time? `ls /etc | more > output`
@@ -61,8 +63,9 @@ Redirection/Piping
 Grep & Find
 ---
 - Grep
-	- demo: `grep hello hello.c`
-			`cat hello.c | grep hello`
+	- demo: 
+		1. `grep hello hello.c`
+		2. `cat hello.c | grep hello`
 	- exercise:
 		1. use head and tail to find patterns just in parts of files.
 		2. see what -i parameter does when used with grep
@@ -71,9 +74,10 @@ Process Management
 ---
 
 - ps and kill
-	- demo: `ps aux`
-			`kill -15 1234`
-			`kill -l`
+	- demo:
+		1. `ps aux`
+		2. `kill -15 1234`
+		3. `kill -l`
 	- exercise:
 		1. use grep to find all the processes running as root
 		2. open firefox web browser and find its pid
@@ -84,9 +88,10 @@ Process Management
 		1. open firefox and use top interactive commands to close it
 		2. open firefox again. open some websites and tabs and see how they affect the values in top command.
 - Background processes
-	- demo: `vim &`
-			`jobs`
-			`fg`
+	- demo:
+		1. `vim &`
+		2. `jobs`
+		3. `fg`
 	- exercise:
 		1. run "top". now use ctrl+c to terminate it. run in another time and this time use ctrl+z. what is the difference?
 		2. run top in the background. also run vim in the background. try switching between them in one terminal.
